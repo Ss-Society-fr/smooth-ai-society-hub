@@ -1,6 +1,8 @@
 
 import React from "react";
 import ProgramCard from "./ProgramCard";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const ProgramSection = () => {
   const programWeek1 = [
@@ -80,12 +82,13 @@ const ProgramSection = () => {
   ];
 
   return (
-    <section className="bg-white py-16">
+    <section id="programme" className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">
             Programme de la formation : 14 jours pour lancer ton business
           </h2>
+          <div className="w-24 h-1 bg-brand-blue mx-auto my-4"></div>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
             Objectif : Créer, vendre et automatiser un business de coaching en ligne structuré, aligné et rentable, en seulement 14 jours grâce à l'IA.
           </p>
@@ -94,7 +97,7 @@ const ProgramSection = () => {
         {/* Week 1 */}
         <div className="mb-12">
           <div className="flex items-center mb-6">
-            <div className="bg-brand-blue rounded-full w-10 h-10 flex items-center justify-center text-white font-bold">1</div>
+            <div className="bg-brand-blue rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl">1</div>
             <h3 className="ml-4 text-2xl font-bold text-gray-900">SEMAINE 1 : FONDATIONS SOLIDES & DESIGN DE TON OFFRE</h3>
           </div>
           
@@ -113,7 +116,7 @@ const ProgramSection = () => {
         {/* Week 2 */}
         <div>
           <div className="flex items-center mb-6">
-            <div className="bg-brand-blue rounded-full w-10 h-10 flex items-center justify-center text-white font-bold">2</div>
+            <div className="bg-brand-pink rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl">2</div>
             <h3 className="ml-4 text-2xl font-bold text-gray-900">SEMAINE 2 : CRÉATION, LANCEMENT & AUTOMATISATION</h3>
           </div>
           
@@ -128,6 +131,19 @@ const ProgramSection = () => {
               />
             ))}
           </div>
+        </div>
+        
+        <div className="mt-16 text-center">
+          <Button 
+            size="lg" 
+            className="bg-brand-pink hover:bg-brand-pink-dark text-white font-semibold px-8 py-6 text-lg"
+          >
+            Je m'inscris maintenant
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+          <p className="mt-4 text-sm text-gray-600">
+            Satisfait ou remboursé pendant 14 jours, sans condition
+          </p>
         </div>
       </div>
     </section>
