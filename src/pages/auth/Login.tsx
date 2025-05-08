@@ -67,10 +67,7 @@ const Login = () => {
             Connectez-vous à votre compte
           </h2>
           <p className="mt-2 text-sm text-gray-600">
-            Ou{" "}
-            <Link to="/inscription" className="font-medium text-brand-blue hover:text-brand-blue-dark">
-              créez un nouveau compte
-            </Link>
+            Accédez à votre espace membre pour suivre votre formation
           </p>
         </div>
         
@@ -145,6 +142,15 @@ const Login = () => {
             </Button>
           </div>
         </form>
+
+        <div className="text-center mt-4">
+          <p className="text-sm text-gray-600">
+            Pas encore membre ?{" "}
+            <Link to="/offres/coaching-ia" className="font-medium text-brand-blue hover:text-brand-blue-dark">
+              Découvrez nos offres
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );

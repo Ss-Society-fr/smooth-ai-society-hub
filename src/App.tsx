@@ -12,7 +12,6 @@ import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Login from "./pages/auth/Login";
-import Register from "./pages/auth/Register";
 import NotFound from "./pages/NotFound";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
@@ -34,7 +33,6 @@ const App = () => (
           <Route path="/faq" element={<Layout><FAQ /></Layout>} />
           <Route path="/contact" element={<Layout><Contact /></Layout>} />
           <Route path="/connexion" element={<Login />} />
-          <Route path="/inscription" element={<Register />} />
           <Route path="/mentions-legales" element={<Layout><MentionsLegales /></Layout>} />
           <Route path="/politique-confidentialite" element={<Layout><PolitiqueConfidentialite /></Layout>} />
           <Route path="/cgv" element={<Layout><CGV /></Layout>} />

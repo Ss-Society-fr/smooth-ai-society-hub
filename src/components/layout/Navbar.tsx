@@ -83,7 +83,7 @@ const Navbar = () => {
               Se connecter
             </Button>
           </Link>
-          <Link to="/inscription">
+          <Link to="/offres/coaching-ia">
             <Button className="text-sm font-medium bg-brand-blue hover:bg-brand-blue-dark">
               S'inscrire
             </Button>
@@ -153,7 +153,7 @@ const Navbar = () => {
                         Se connecter
                       </Link>
                       <Link 
-                        to="/inscription" 
+                        to="/offres/coaching-ia" 
                         className="-mx-3 block rounded-lg bg-brand-blue px-3 py-2.5 text-center text-base font-medium text-white hover:bg-brand-blue-dark"
                         onClick={() => setMobileMenuOpen(false)}
                       >
