@@ -16,6 +16,7 @@ import NotFound from "./pages/NotFound";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import CGV from "./pages/CGV";
+import MemberDashboard from "./pages/member/MemberDashboard";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/mentions-legales" element={<Layout><MentionsLegales /></Layout>} />
           <Route path="/politique-confidentialite" element={<Layout><PolitiqueConfidentialite /></Layout>} />
           <Route path="/cgv" element={<Layout><CGV /></Layout>} />
+          <Route path="/membre/dashboard" element={<MemberDashboard />} />
           <Route path="*" element={<Layout><NotFound /></Layout>} />
         </Routes>
       </BrowserRouter>

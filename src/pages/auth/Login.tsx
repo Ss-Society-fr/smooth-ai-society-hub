@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -14,6 +14,7 @@ const Login = () => {
     rememberMe: false
   });
 
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -49,8 +50,8 @@ const Login = () => {
         description: "Bienvenue dans votre espace membre"
       });
       setIsSubmitting(false);
-      // In a real application, you would redirect to the member area or dashboard
-      // history.push("/dashboard");
+      // Redirect to member dashboard
+      navigate("/membre/dashboard");
     }, 1500);
   };
 
