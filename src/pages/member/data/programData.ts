@@ -1,4 +1,3 @@
-
 export type Week = "week1" | "week2";
 
 export interface Generator {
@@ -25,7 +24,7 @@ export const dailyData: ProgramData = {
   day1: {
     title: "Jour 1 – Clarifie ta mission & ce que tu apportes d'unique",
     subtitle: "Identifier ta zone de génie, ce qui te rend unique, et la mission qui te fait vibrer.",
-    objective: "Identifier ta vraie valeur, tes forces, ton "why", ton style de coaching, ta vision.",
+    objective: "Identifier ta vraie valeur, tes forces, ton \"why\", ton style de coaching, ta vision.",
     isCompleted: true,
     steps: [
       "Réfléchir à tes expériences passées et tes compétences clés",
@@ -224,7 +223,7 @@ export const dailyData: ProgramData = {
     objective: "Workbooks, PDF, templates, tableaux de suivi, formats interactifs.",
     isCompleted: false,
     steps: [
-      "Préparer ton script d'appel structuré et humain",
+      "Préparer ton script d'appel découverte structuré et humain",
       "Gérer les objections comme un pro, sans pression",
       "Envoyer un récap et suivre le prospect"
     ],
